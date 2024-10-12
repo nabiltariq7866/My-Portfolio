@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #080808;
+  color: #fff;
+}
+#header {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("image/nabilb.png");
+  background-size: cover;
+  background-position: center;
+  border: 7px solid reds;
+}
+.container {
+  padding: 10px 10%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 10px 20px;
+}
+.container nav img {
+  width: 80px;
+}
+.container nav ul {
+  list-style-type: none;
+}
+.container nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.header-text {
+  margin-top: 20%;
+  font-size: 20px;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span {
+  color: #ff004f;
+}
+/*  -------------About section---------------*/
+#about {
+  padding: 80px 0px;
+  color: #ababab;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.about-col-1 {
+  flex-basis: 40%;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.about-col-2 {
+  flex-basis: 55%;
+}
+.sub-title {
+  font-size: 50px;
+  color: white;
+}
+.sub-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  transition: 0.3s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ul li {
+  list-style-type: none;
+  margin: 20px 0px;
+}
+.tab-contents ul li span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ff004f;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+/*--------------------Service section--------------------*/
+#service {
+  padding: 30px 0px;
+}
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.service-list div {
+  background-color: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, translate 0.5s;
+}
+.service-list div i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.service-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.service-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.service-list div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: 0.5s;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  text-decoration: none;
+  color: #ff004f;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 50px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+.work:hover .layer {
+  height: 100%;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.btn {
+  text-decoration: none;
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  color: #fff;
+  padding: 14px 50px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.btn:hover {
+  background: #ff004f;
+}
+/*------------Contact-----------*/
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left p {
+  margin-top: 20px;
+}
+.contact-left p i {
+  color: #ff004f;
+  font-size: 25px;
+  margin-right: 15px;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a i {
+  font-size: 30px;
+}
+.social-icons a:hover {
+  color: #bf013d;
+  transform: translateY(-5px);
+}
+.btnmove {
+  display: inline-block;
+  background: #ff004f;
+  cursor: pointer;
+}
+.contact-right form {
+  width: 100%;
+}
+.btn2 {
+  margin-top: 5px;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  margin: 10px 0px;
+  border-radius: 6px;
+  background: #262626;
+  color: #fff;
+  font-size: 18px;
+}
+.copy-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+nav .fa-solid {
+  display: none;
+}
+/* ---------------------CSS for small screen-------------- */
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url("/image/nabil\ cover.png");
+  }
+  .header-text {
+    margin-top: 20%;
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 20px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 100px;
+    height: 100vh;
+    padding-top: 50px;
+    display: block;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  nav ul li {
+    margin: 25px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+}
+#msg {
+  color: #61b752;
+  display: block;
+  margin-top: -40px;
+}

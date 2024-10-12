@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/75e82ada8a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="image/logo2.png" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend developer</p>
+          <h1>
+            Hi, I'm <span>Nabil Tariq</span><br />
+            from Lahore, Pakistan
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--------------ABout section -------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/user1-Photoroom.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I have recently graduated with a degree in BS-IT. I have learned a
+              lot about coding and programming during my time at university. I
+              have worked on some projects and I think I did a good job. I know
+              HTML, CSS, and JavaScript, and a bit of React and Vue.js.
+            </p>
+            <div class="sub-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />
+                  Frontend development
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  Backend development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Amazon</span><br />
+                  I'm created Amazon website using html css javascripts
+                </li>
+                <li>
+                  <span>Myntra E-commerce</span><br />
+                  I'm created Myntra E-commerce website using html css
+                  javascripts
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>BS-IT University Of Punjab,Lahore</span><br />
+                  CGPA 3.11
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------service secton ------------- -->
+    <div id="service">
+      <div class="container">
+        <h1 class="sub-title">My Service</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web design</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos id corporis cupiditate eaque saepe.
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Frontend developer</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos id corporis cupiditate eaque saepe.
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Backend developer</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos id corporis cupiditate eaque saepe.
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------portfolio----------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image/amazon.jpeg" alt="" />
+            <div class="layer">
+              <h3>Amazon</h3>
+              <p>
+                I'm creating a Amazon website cloned using the html css
+                javascripts
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/myntra.jpg" alt="" />
+            <div class="layer">
+              <h3>Myntra</h3>
+              <p>
+                I'm creating a Myntra E-commerece website cloned using the html
+                css javascripts
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See Moere</a>
+      </div>
+    </div>
+    <!---------Contact--------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> nabiltariq7866@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> 03034474859</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/nabil.tariq.925?mibextid=ZbWKwL"
+                 target="_blank"><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://x.com/NabilTariq9"
+                ><i class="fa-brands fa-square-twitter"></i
+               target="_blank"></a>
+              <a href="https://www.instagram.com/nabiltariq7866"
+                ><i class="fa-brands fa-square-instagram"></i
+               target="_blank"></a>
+              <a href="https://www.linkedin.com/in/nabil-tariq-0b082931"
+                ><i class="fa-brands fa-linkedin"></i
+               target="_blank"></a>
+            </div>
+            <a href="image/Nabil-Tariq.pdf" download class="btn btnmove"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btnmove btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p>Copyright 1999-2024 by Refsnes Data. All Rights Reserved.</p>
+      </div>
+    </div>
+    <script src="javascrtipt.js"></script>
+  </body>
+</html>
